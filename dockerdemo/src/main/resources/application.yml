@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    name: db2  #���ݿ���
+#    url: jdbc:mysql://172.17.0.2:3306/db2 #url
+    url: jdbc:mysql://127.0.0.1:3306/db2 #url
+    username: root  #�û���
+    password: 123456  #����
+    driver-class-name: com.mysql.jdbc.Driver  #���ݿ���������
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: com.example.dockerdemo.bean #配置实体类
+
+server:
+  port: 8081
+
